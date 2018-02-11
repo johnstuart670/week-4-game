@@ -7,11 +7,20 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	padding: 5px 0px 5px 0px;
 }
 
 /* background colors */
 body {
 	background-color:whitesmoke;
+}
+
+.restartHolder,
+.scoreBoard,
+.scoreKeeper,
+.crystalKeeper {
+	background-color: blue;
+	color:whitesmoke;
 }
 
 .button.crystalClass {
