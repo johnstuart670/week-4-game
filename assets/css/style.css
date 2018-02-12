@@ -21,9 +21,11 @@ body {
 .crystalKeeper {
 	background-color: blue;
 	color:whitesmoke;
+	padding: 5px;
+	margin:0px;
 }
 
-.button.crystalClass {
-	background-color: whitesmoke;
-	width: 10%;
+.crystalClass {
+	max-width: 45%;
+	margin:0px 4px 0px 4px;
 }

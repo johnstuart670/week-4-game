@@ -28,6 +28,8 @@ uniqueValues();
 	console.log(values, goalNumber);
 };
 
+reset();
+
 // OnClick events 
 $("#crystalOne").click(function () {
 	counter = counter + values[0];
