@@ -24,12 +24,9 @@ uniqueValues();
 	// update the html to reflect the values
 	counter = 0;
 	$("#goalScore").html("<strong>POINT GOAL</strong>:     " + goalNumber);
-	$("#currentScore").html("<strong>CURRENT SCORE</strong>:     " + counter);
+	$("#currentScore").html("<strong>CURRENT POINTS</strong>:     " + counter);
 	console.log(values, goalNumber);
 };
-
-// run Reset on load
-reset();
 
 // OnClick events 
 $("#crystalOne").click(function () {
@@ -50,6 +47,10 @@ $("#crystalThree").click(function () {
 $("#crystalFour").click(function () {
 	counter = counter + values[3];
 	checkWin();
+});
+
+$("#restartButton").click(function(){
+	reset();
 });
 
 // run the lose/win options or leave it be
