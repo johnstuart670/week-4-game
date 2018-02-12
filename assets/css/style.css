@@ -3,7 +3,8 @@
 .scoreKeeper,
 .restartHolder,
 .crystalKeeper,
-.scoreBoard {
+.scoreBoard,
+footer {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -40,7 +41,7 @@ p,
 	font-size: 20px;
 };
 
-footer {
+.footContent {
 	text-align: center;
 	padding: 25px 0px 0px 50px;
 };
