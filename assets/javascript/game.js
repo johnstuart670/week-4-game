@@ -18,7 +18,7 @@ var noDups = false;
 //For loop to fill the array
 function reset() {
 	// pick numbers
-uniqueValues();
+	uniqueValues();
 	// set the goalNumber
 	goalNumber = Math.round((Math.random() * 120) + 30);
 	// update the html to reflect the values
@@ -51,7 +51,7 @@ $("#crystalFour").click(function () {
 	checkWin();
 });
 
-$("#restartButton").click(function(){
+$("#restartButton").click(function () {
 	reset();
 });
 
@@ -74,32 +74,33 @@ function checkWin() {
 };
 
 function uniqueValues() {
-do {
-	newValues();
-	checkValues();
-}
-while (noDups === false)};
+	do {
+		newValues();
+		checkValues();
+	}
+	while (noDups === false)
+};
 
 // for loop to set the values
-function newValues(){
-values = [];
-for (var i = 0, t = 14; i < 4; i++) {
-	values.push(Math.round(Math.random() * t) + (i + 1));
-}
+function newValues() {
+	values = [];
+	for (var i = 0, t = 14; i < 4; i++) {
+		values.push(Math.round(Math.random() * t) + (i + 1));
+	}
 };
 
 
 function checkValues() {
 
-if (	// if values at 0 are equal to 1 2 or 3
-values[0] === values[1] || values[0] === values[2] || values[0] === values[3] 
-	// if values at 1 are equal to 2 or 3
-	||	values[1] === values[2] || values[1] === values[3]  
-	// or if values at 2 are equal to 3
-	|| values[2] === values[3]) {
-console.log("THere are duplicates, let's go again");
-uniqueValues();
+	if (	// if values at 0 are equal to 1 2 or 3
+		values[0] === values[1] || values[0] === values[2] || values[0] === values[3]
+		// if values at 1 are equal to 2 or 3
+		|| values[1] === values[2] || values[1] === values[3]
+		// or if values at 2 are equal to 3
+		|| values[2] === values[3]) {
+		console.log("THere are duplicates, let's go again");
+		uniqueValues();
 	}
-	else { noDups = true;}
+	else { noDups = true; }
 };
 

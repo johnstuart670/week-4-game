@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- Local CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<!-- Local CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>~! CRYSTAL GAME !~</title>
 </head>
-<body><div class="container">
-	<div class="row">
-	<header> 
-	<h1 class = 'col-md-12'>Crystal Guess Game</h1>
-</div>
-<div class="row">
-	<p class = 'col-md-12'>Below will be four crystals for you to click on.  Each crystal has a randomly assigned value that when clicked, it will add to the Current Points counter.  Get your points to the exact total of the Point Goal to win!</p>
-</div>
-	</header>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<header>
+				<h1 class='col-md-12'>Crystal Guess Game</h1>
+		</div>
+		<div class="row">
+			<p class='col-md-12'>Below will be four crystals for you to click on. Each crystal has a randomly assigned value that when clicked, it will
+				add to the Current Points counter. Get your points to the exact total of the Point Goal to win!</p>
+		</div>
+		</header>
 	</div>
-<div class="row restartHolder">
-<div class="col-md-10">
-	<button id = "restartButton">Restart</div>
-</div>
-</div>
-<div class="row scoreKeeper">
-	<div id = "winsTracker" class="col-md-5">Wins: 0</div>
-	<div id = "lossTracker" class="col-md-5">Losses: 0</div>
-</div>
-<div class="row scoreBoard">
-	<p id = "goalScore" class="col-md-3">StartUp</p>
-	<p id = "currentScore" class="col-md-3">StartUp</p>
-</div>
-<div class="row crystalKeeper">
-	<img id = "crystalOne" class = "crystalClass" src="./assets/images/crystalOne.png">
-	<img id = "crystalTwo" class = "crystalClass" src="./assets/images/crystalTwo.png">
-	<img id = "crystalThree" class = "crystalClass" src="./assets/images/crystalThree.png">
-	<img id = "crystalFour" class = "crystalClass" src="./assets/images/crystalFour.png">
-</div>
+	<section>
+		<div class="row restartHolder">
+			<div class="col-md-10">
+				<button id="restartButton">Restart</div>
+		</div>
+		</div>
+		<div class="row scoreKeeper">
+			<div id="winsTracker" class="col-md-4">Wins: 0</div>
+			<div id="lossTracker" class="col-md-4">Losses: 0</div>
+		</div>
+		<div class="row scoreBoard">
+			<p id="goalScore" class="col-md-3">StartUp</p>
+			<p id="currentScore" class="col-md-3">StartUp</p>
+		</div>
+		<div class="row crystalKeeper">
+			<img id="crystalOne" class="crystalClass" src="./assets/images/crystalOne.png">
+			<img id="crystalTwo" class="crystalClass" src="./assets/images/crystalTwo.png">
+			<img id="crystalThree" class="crystalClass" src="./assets/images/crystalThree.png">
+			<img id="crystalFour" class="crystalClass" src="./assets/images/crystalFour.png">
+		</div>
+	</section>
+	<footer>
+		<div class="col-md-12">Copyright 2018 John Stuart</div>
+	</footer>
 </body>
 
 <!-- JQuery Link (Ben said to do it for the old version) -->
-<script
-  src="http://code.jquery.com/jquery-2.2.4.js"
-  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-	crossorigin="anonymous"></script>
-	<!-- LInking to my Javascript -->
-<script type = "text/javascript" src ="assets/javascript/game.js"></script>
+<script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<!-- LInking to my Javascript -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </html>
