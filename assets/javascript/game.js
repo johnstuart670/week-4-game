@@ -15,6 +15,7 @@ var losses = 0;
 // allows us to have unique value sets
 var noDups = false;
 
+$(document).ready(function () {
 //For loop to fill the array
 function reset() {
 	// pick numbers
@@ -104,3 +105,4 @@ function checkValues() {
 	else { noDups = true; }
 };
 
+});
